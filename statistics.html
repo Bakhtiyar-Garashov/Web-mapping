@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>York statistics</title>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <style>
+        html,
+        body,
+        #container {
+            background-color: black !important;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" style="width: 100%; height: 100%"></div>
+    <script>
+        anychart.onDocumentReady(function () {
+
+            // set the data
+            var data = [
+                { x: "Moor Lane", value: 300 },
+                { x: "Rowntree Park", value: 57 },
+                { x: "Bishopthorpe Road", value: 41 },
+                { x: "Nunnery Lane", value: 193 },
+                { x: "Esplanade", value: 75 },
+                { x: "Marygate", value: 350 },
+                { x: "Bootham Row", value: 100 },
+                { x: "Union Terrace", value: 145 },
+                { x: "Monk Bar", value: 243 },
+                { x: "Foss Bank", value: 316 },
+                { x: "East Parade", value: 14 },
+                { x: "Piccadilly", value: 287 },
+                { x: "Castle", value: 318 },
+                { x: "St Georges Field", value: 276 }
+
+            ];
+
+            // create the chart
+            var chart = anychart.pie();
+
+            // set the chart title
+           // chart.title("Number of available places in car parks");
+
+            // add the data
+            chart.data(data);
+
+            // display the chart in the container
+            chart.container('container');
+            chart.draw();
+
+            // set legend position
+            chart.legend().position("left");
+            // set items layout
+            chart.legend().itemsLayout("vertical");
+
+        });
+    </script>
+</body>
+
+</html>

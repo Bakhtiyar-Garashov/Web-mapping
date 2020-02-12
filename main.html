@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html style="background-color: black;">
+
+<head>
+	<meta charset="utf-8">
+	<title>Charging stations</title>
+
+	<!--link to stylesheet-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- link to leaflet stylesheet-->
+	<link rel="stylesheet" href="css/leaflet.css">
+	<!--BOOTSTRAP CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<h1>York city</h1>
+		<div id="map"></div>
+		<h1 id="title">Statistics</h1>
+		<iframe src="statistics.html" class="statistic"></iframe>
+		<iframe src="list.html" class="list"></iframe>
+	</div>
+
+
+	<!-- link to leaflet javascript library-->
+	<script src="js/leaflet-src.js"></script>
+
+	<!--link to the files that contains geoJson data-->
+	<script src="data/Electric_Charging_Points.js" type="text/javascript"> </script>
+	<script src="data/Parish_boundaries.js" type="text/javascript"> </script>
+	<script src="data/Car_Parks.js" type="text/javascript"> </script>
+
+	<!-- link to main javascript file -->
+	<script src="js/main.js"></script>
+	<!--BOOTSTRAP JS-->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+</body>
+<html>
