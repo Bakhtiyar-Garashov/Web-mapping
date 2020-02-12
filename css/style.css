@@ -1,6 +1,6 @@
 h1{
 	position: fixed;
-    color: black;
+        color: black;
 	margin-top: 0%;
 	margin-left: 7%;
 	z-index: 2;
@@ -11,7 +11,7 @@ h1{
 
 #title{
 	position: fixed;
-    color: black;
+    	color: black;
 	margin-top: 0%;
 	margin-left: 55%;
 	float: right;
