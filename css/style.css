@@ -48,7 +48,7 @@ body{
 	right: 1%;
 	overflow:hidden;
 	position: absolute;
-	border:1px #444 dashed;
+	border:3px #444 dashed;
 	border-bottom: none;
 	z-index: 1;
 
@@ -62,7 +62,7 @@ body{
 	right: 1%;
 	overflow:hidden;
 	position: absolute;
-	border:1px #444 dashed;
+	border:3px #444 dashed;
 	border-top: none;
 	z-index: 1;
 
